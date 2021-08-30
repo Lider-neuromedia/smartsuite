@@ -69,6 +69,19 @@ export class SmartsalesComponent implements OnInit {
     $("#wrapper").toggleClass("toggled");
   }
 
+  
+  // public offsetAnchor() {
+  //   if (location.hash.length !== 0) {
+  //     window.scrollTo(window.scrollX, window.scrollY - 20);
+  //   }
+  // }
+  
+  anchorCustom(){
+    console.log('entro');
+    // window.setTimeout(function() {
+    //   this.offsetAnchor();
+    // }, 0);
+  }
 
   close(reason: string) {
     this.reason = reason;

@@ -50,10 +50,10 @@
         <div class="seccion3-onecheck">
             <div class="container">
                 <div class="row pt-100" *ngIf="data.seccion2">
-                    <div class="col-md-6" data-aos="fade-down-left" data-aos-anchor-placement="top-center" data-aos-duration="1000">
+                    <div class="col-md-6" data-aos="fade-down-left" data-aos-duration="1000">
                          <img class="img-fluid" [src]="data.seccion2.imagen" alt="Comercial">
                     </div>
-                    <div class="col-md-6 my-auto" data-aos="fade-down-right" data-aos-anchor-placement="top-center" data-aos-duration="1200">
+                    <div class="col-md-6 my-auto" data-aos="fade-down-right" data-aos-duration="1200">
                         <h3 class="size28 ubuntu line-height-36 mb-2" [innerHTML]="data.seccion2.texto | safeHtml: 'html'"></h3>
                         <ng-container *ngFor="let icono of data.seccion2.iconos">
                             <ng-container *ngFor="let logo of icono.logo">
@@ -70,10 +70,10 @@
             <div class="container">
                 <ngx-skeleton-loader class="d-flex pt-3" count="1" *ngIf="loader" animation="progress" appearance="circle" [theme]="{ 'width':'100%','height':'250px','border-radius': '10px' }"></ngx-skeleton-loader>
                 <div class="row pt-100" *ngIf="data.seccion3 && !loader">
-                    <div class="col-md-4 my-auto" data-aos="fade-down-left" data-aos-anchor-placement="top-center" data-aos-duration="1200">
+                    <div class="col-md-4 my-auto" data-aos="fade-down-left" data-aos-duration="1200">
                         <p class="text-gray letter-spacing-043n line-height-36 size28" [innerHTML]="data.seccion3.descripcion | safeHtml: 'html'"></p>
                     </div>
-                    <div class="col-md-8" data-aos="fade-down-right" data-aos-anchor-placement="top-center" data-aos-duration="1200">
+                    <div class="col-md-8" data-aos="fade-down-right" data-aos-duration="1200">
                         <div class="back-rombo">
                             <div class="row">
                                 <ng-container *ngFor="let funcion of data.seccion3.funcionalidades; let i = index; let last = last">
@@ -93,11 +93,11 @@
             </div>
             <div class="container mt-5">
                 <div class="row">
-                    <div class="col-md-12 mb-4" data-aos="fade-top" data-aos-anchor-placement="top-center" data-aos-duration="1000">
+                    <div class="col-md-12 mb-4" data-aos="fade-top" data-aos-duration="1000">
                         <h2 class="size32 text-center ubuntu letter-spacing-1-28 line-height-36 mb-0" [innerHTML]="data.seccion4.titulo | safeHtml: 'html'"></h2>
                     </div>
                     <ng-container *ngFor="let gestion of data.seccion4.gestion_de_rondas">
-                        <div class="col" data-aos="fade-down" data-aos-anchor-placement="top-center" data-aos-duration="1200">
+                        <div class="col" data-aos="fade-down" data-aos-duration="1200">
                             <img class="img-fluid d-block mx-auto mb-3" [src]="gestion.icono" alt="Funcionalidad">
                             <p class="text-center font-weight-500 size14 letter-spacing-05 line-height-20 text-black-intrack" [innerHTML]="gestion.descripcion | safeHtml: 'html'"></p>
                         </div>
@@ -107,10 +107,10 @@
             <div class="seccion5-onecheck">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-5" data-aos="fade-down-left" data-aos-anchor-placement="top-center" data-aos-duration="1200">
+                        <div class="col-md-5" data-aos="fade-down-left" data-aos-duration="1200">
                             <img class="img-fluid d-block mx-auto mb-3" [src]="data.seccion5.imagen" alt="Gestión">
                         </div>
-                        <div class="col-md-7 my-auto" data-aos="fade-down-right" data-aos-anchor-placement="top-center" data-aos-duration="1200">
+                        <div class="col-md-7 my-auto" data-aos="fade-down-right" data-aos-duration="1200">
                             <p class="text-black-intrack size30 letter-spacing-069 line-height-42" [innerHTML]="data.seccion5.titulo | safeHtml: 'html'"></p>
                             <div class="row">
                                 <div class="col-md-4">
@@ -129,7 +129,7 @@
         <div class="seccion6-onecheck pt-50 pb-50" *ngIf="data.seccion6">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-7" data-aos="fade-down-left" data-aos-anchor-placement="top-center" data-aos-duration="1200">
+                    <div class="col-md-7" data-aos="fade-down-left" data-aos-duration="1200">
                         <div class="row justify-content-end mb-2">
                             <ng-container *ngFor="let beneficio of data.seccion6.beneficios">
                                 <div class="beneficio d-flex p-2 m-1 card-zoom">
@@ -139,7 +139,7 @@
                             </ng-container>
                         </div>
                     </div>
-                    <div class="col-md-5 my-auto" data-aos="fade-down-right" data-aos-anchor-placement="top-center" data-aos-duration="1200">
+                    <div class="col-md-5 my-auto" data-aos="fade-down-right" data-aos-duration="1200">
                         <p class="size32 text-gray letter-spacing-097 line-height-36" [innerHTML]="data.seccion6.descripcion | safeHtml: 'html'"></p>
                         <a *ngIf="data.seccion6.url_boton" mat-raised-button class="text-decoration-none btn-onecheck-fill size15 border-radius-11 font-weight-300" [href]="data.seccion6.url_boton">{{ data.seccion6.texto_boton }}</a>
                     </div>
@@ -148,7 +148,7 @@
         </div>
         <div class="seccion7-onecheck pt-50 pb-50">
             <div class="container-fluid pt-50" *ngIf="data.seccion7">
-                <div class="row" data-aos="fade-down" data-aos-anchor-placement="top-center" data-aos-duration="1200">
+                <div class="row" data-aos="fade-down" data-aos-duration="1200">
                     <div class="col-md-12">
                         <h2 class="size35 font-weight-700 letter-spacing-097 line-height-46 text-orange-onecheck text-center ubuntu mb-4"><img [src]="data.seccion7.icono"> {{data.seccion7.titulo}}</h2>
                         <owl-carousel-o [options]="customOptions">
@@ -162,7 +162,7 @@
                 </div>
             </div>
             <div class="container mt-5 pt-3" *ngIf="data.seccion8">
-                <div class="row" data-aos="fade-down" data-aos-anchor-placement="top-center" data-aos-duration="1200">
+                <div class="row" data-aos="fade-down" data-aos-duration="1200">
                     <div class="col-md-12">
                         <div class="bg-orange-onecheck border-radius-30 p-5 box-shadow-0-2-24">
                             <h2 class="text-center text-white size25 font-weight-700 letter-spacing-071 line-height-29">{{ data.seccion8.titulo }}</h2>
@@ -173,10 +173,10 @@
             </div>
             <div class="container mt-5 pt-3" *ngIf="data.seccion9">
                 <div class="row">
-                    <div class="col-md-6" data-aos="fade-down-left" data-aos-anchor-placement="top-center" data-aos-duration="1200">
+                    <div class="col-md-6" data-aos="fade-down-left" data-aos-duration="1200">
                         <img class="img-fluid" [src]="data.seccion9.imagen" alt="Solución Eficaz" />
                     </div>
-                    <div class="col-md-6 my-auto" data-aos="fade-down-right" data-aos-anchor-placement="top-center" data-aos-duration="1200">
+                    <div class="col-md-6 my-auto" data-aos="fade-down-right" data-aos-duration="1200">
                         <h3 class="ubuntu text-orange-onecheck font-weight-700 size22 letter-spacing-071 line-height-32 mb-0">{{ data.seccion9.titulo }}</h3>
                         <p class="text-black-intrack size22 letter-spacing-071 line-height-32" [innerHTML]="data.seccion9.descripcion | safeHtml: 'html'"></p>
                     </div>

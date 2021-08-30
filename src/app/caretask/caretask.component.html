@@ -39,10 +39,10 @@
         <div class="seccion3-caretask pt-5" style="background-color: #f2f7fd;">
             <div class="container pt-3">
                 <div class="row align-items-center pb-5">
-                    <div class="col-md-5" data-aos="fade-down-left" data-aos-anchor-placement="top-center" data-aos-duration="1000">
+                    <div class="col-md-5" data-aos="fade-down-left"  data-aos-duration="1000">
                          <img class="img-fluid" [src]="data.seccion2.imagen" alt="Comercial">
                     </div>
-                    <div class="col-md-7 my-auto" data-aos="fade-down-right" data-aos-anchor-placement="top-center" data-aos-duration="1000">
+                    <div class="col-md-7 my-auto" data-aos="fade-down-right"  data-aos-duration="1000">
                         <h3 class="line-height-36 mb-2" [innerHTML]="data.seccion2.texto | safeHtml: 'html'"></h3>
                         <ng-container *ngFor="let icono of data.seccion2.iconos">
                             <ng-container *ngFor="let logo of icono.logo">
@@ -51,7 +51,7 @@
                         </ng-container>
                     </div>
                 </div>
-                <div class="row pb-5" data-aos="fade-down" data-aos-anchor-placement="top-center" data-aos-duration="1000">
+                <div class="row pb-5" data-aos="fade-down"  data-aos-duration="1000">
                     <div class="col-md-12">
                         <h2 class="font-weight-700 text-green size38 letter-spacing-1-03 line-height-47 text-center ubuntu text-dark-blue-caretask">{{data.seccion2.titulo_boton}}</h2>
                         <a mat-raised-button class="btn-caretask-dark-fill text-decoration-none size18 w-15 border-radius-3 font-weight-500 d-block mx-auto" [href]="data.seccion2.url_boton">{{ data.seccion2.texto_boton }}</a>
@@ -62,7 +62,7 @@
         <div class="seccion4-caretask pt-100" style="background-color: #F2F7FD;">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6 pt-5 pb-5" data-aos="fade-down-left" data-aos-anchor-placement="top-center" data-aos-duration="1000" style="background-image: url('{{ data.seccion3.imagen }}');background-size: cover;background-position: center;">
+                    <div class="col-md-6 pt-5 pb-5" data-aos="fade-down-left"  data-aos-duration="1000" style="background-image: url('{{ data.seccion3.imagen }}');background-size: cover;background-position: center;">
                         <div class="row">
                             <ng-container *ngFor="let gestion of data.seccion3.gestion; let i = index">
                                 <div class="col-xs-12 col-sm-4 pt-4 col{{i}}">
@@ -74,15 +74,15 @@
                             </ng-container>
                         </div>
                     </div>
-                    <div class="col-md-6 my-auto" data-aos="fade-down-right" data-aos-anchor-placement="top-center" data-aos-duration="1000">
+                    <div class="col-md-6 my-auto" data-aos="fade-down-right"  data-aos-duration="1000">
                         <p class="font-weight-300 size38 letter-spacing-1-03 line-height-46 text-dark-blue-caretask" [innerHTML]="data.seccion3.texto | safeHtml: 'html'"></p>
                     </div>
                 </div>
             </div>
             <div class="container mt-5 pt-150">
                 <div class="row">
-                    <img class="img-fluid img-sec3-caretask" [src]="data.seccion4.imagen" alt="Tareas" data-aos="fade-down-right" data-aos-anchor-placement="top-center" data-aos-duration="1000">
-                    <div class="col-md-6" data-aos="fade-down-left" data-aos-anchor-placement="top-center" data-aos-duration="1000">
+                    <img class="img-fluid img-sec3-caretask" [src]="data.seccion4.imagen" alt="Tareas" data-aos="fade-down-right"  data-aos-duration="1000">
+                    <div class="col-md-6" data-aos="fade-down-left"  data-aos-duration="1000">
                         <p class="size25 text-dark-blue-caretask font-weight-700 letter-spacing-069 line-height-33" [innerHTML]="data.seccion4.texto | safeHtml: 'html'"></p>
                         <div class="row">
                             <div class="col-md-6">
@@ -99,7 +99,7 @@
             </div>
             <div class="container mt-100 pt-150">
                 <div class="row align-items-center">
-                    <div class="col-md-6" data-aos="fade-down-left" data-aos-anchor-placement="top-center" data-aos-duration="1000">
+                    <div class="col-md-6" data-aos="fade-down-left"  data-aos-duration="1000">
                         <div class="row justify-content-end mb-2">
                             <ng-container *ngFor="let beneficio of data.seccion5.beneficios">
                                 <div class="beneficio-caretask d-flex p-2 m-1 card-zoom">
@@ -109,7 +109,7 @@
                             </ng-container>
                         </div>
                     </div>
-                    <div class="col-md-6 my-auto" data-aos="fade-down-right" data-aos-anchor-placement="top-center" data-aos-duration="1000">
+                    <div class="col-md-6 my-auto" data-aos="fade-down-right"  data-aos-duration="1000">
                         <p class="size32 text-gray letter-spacing-097 line-height-36" [innerHTML]="data.seccion5.descripcion | safeHtml: 'html'"></p>
                         <a *ngIf="data.seccion5.url_boton" mat-raised-button class="text-decoration-none btn-caretask-dark-fill size18 border-radius-3 font-weight-500" [href]="data.seccion5.url_boton">{{ data.seccion5.texto_boton }}</a>
                     </div>
@@ -117,15 +117,15 @@
             </div>
             <div class="container mb-5 mt-5">
                 <div class="row">
-                    <div class="col-md-6 my-auto" data-aos="fade-down-left" data-aos-anchor-placement="top-center" data-aos-duration="1000">
+                    <div class="col-md-6 my-auto" data-aos="fade-down-left"  data-aos-duration="1000">
                         <p class="font-weight-300 size24 letter-spacing-069 line-height-30 text-gray" [innerHTML]="data.seccion6.descripcion | safeHtml: 'html'"></p>
                     </div>
-                    <div class="col-md-6" data-aos="fade-down-right" data-aos-anchor-placement="top-center" data-aos-duration="1000">
+                    <div class="col-md-6" data-aos="fade-down-right"  data-aos-duration="1000">
                         <img class="img-fluid mx-auto d-block" [src]="data.seccion6.imagen" alt="Integración">
                     </div>
                 </div>
             </div>
-            <div class="seccion5-caretask" data-aos="fade-top" data-aos-anchor-placement="top-center" data-aos-duration="1000">
+            <div class="seccion5-caretask" data-aos="fade-top"  data-aos-duration="1000">
                 <img class="img-fluid" [src]="data.seccion7.imagen" alt="Clínica background">
                 <img class="img-fluid clinica" [src]="data.seccion7.logo" alt="Clínica">
             </div>
@@ -133,10 +133,10 @@
         <div class="seccion6-caretask pt-5 pb-5" style="background-color: #F2F7FD;">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6" data-aos="fade-down-left" data-aos-anchor-placement="top-center" data-aos-duration="1000">
+                    <div class="col-md-6" data-aos="fade-down-left"  data-aos-duration="1000">
                         <img class="img-fluid" [src]="data.seccion8.imagen" alt="NFC">
                     </div>
-                    <div class="col-md-6 my-auto" data-aos="fade-down-right" data-aos-anchor-placement="top-center" data-aos-duration="1000">
+                    <div class="col-md-6 my-auto" data-aos="fade-down-right"  data-aos-duration="1000">
                         <p class="size25 font-weight-700 letter-spacing-009 line-height-35 text-dark-blue-caretask">{{ data.seccion8.titulo }}</p>  
                         <p class="size25 letter-spacing-009 line-height-35 text-gray" [innerHTML]="data.seccion8.descripcion | safeHtml: 'html'"></p>   
                     </div>

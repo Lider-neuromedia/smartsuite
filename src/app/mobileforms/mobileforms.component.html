@@ -41,7 +41,7 @@
                     </div>
                 </div>
                 <div class="row mt-5 pt-3">
-                    <div class="col-md-7 my-auto" data-aos="fade-down-left" data-aos-anchor-placement="top-center" data-aos-duration="1000">
+                    <div class="col-md-7 my-auto" data-aos="fade-down-left"  data-aos-duration="1000">
                         <p class="size25 letter-spacing-069 text-gray line-height-33 font-weight-700" [innerHTML]="data.seccion2.texto | safeHtml: 'html'"></p>
                         <ng-container *ngFor="let icono of data.seccion2.iconos">
                             <ng-container *ngFor="let logo of icono.logo">
@@ -50,7 +50,7 @@
                         </ng-container>
                         <a mat-raised-button class="btn-green mt-3 size15 text-white d-block border-radius-3 white-space-normal" [href]="data.seccion2.url_boton">{{ data.seccion2.texto_boton }}</a>
                     </div>
-                    <div class="col-md-5" data-aos="fade-down-right" data-aos-anchor-placement="top-center" data-aos-duration="1000">
+                    <div class="col-md-5" data-aos="fade-down-right"  data-aos-duration="1000">
                         <img class="img-fluid" [src]="data.seccion2.imagen" alt="Aplicación móvil">
                     </div>
                 </div>
@@ -58,7 +58,7 @@
         </div>
         <div class="seccion2-mobileforms pt-5 mt-5">
             <div class="container" *ngIf="data.seccion3">
-                <div class="row" data-aos="fade-top" data-aos-anchor-placement="top-center" data-aos-duration="1000">
+                <div class="row" data-aos="fade-top"  data-aos-duration="1000">
                     <div class="col-md-12">
                         <h2 class="font-weight-700 text-green size35 letter-spacing-097 line-height-47 text-center ubuntu">{{ data.seccion3.titulo }}</h2>
                     </div>
@@ -76,7 +76,7 @@
         <div class="seccion3-mobileforms pt-150 pb-50" *ngIf="data.seccion4" [ngStyle]="{'background-image':'url(' + data.seccion4.fondo + ')'}">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6 my-auto" data-aos="fade-down-left" data-aos-anchor-placement="top-center" data-aos-duration="1000">
+                    <div class="col-md-6 my-auto" data-aos="fade-down-left"  data-aos-duration="1000">
                         <p class="size25 text-white font-weight-700 letter-spacing-069 line-height-33" [innerHTML]="data.seccion4.titulo | safeHtml: 'html'"></p>
                         <div class="row">
                             <div class="col-md-6">
@@ -87,7 +87,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6" data-aos="fade-down-right" data-aos-anchor-placement="top-center" data-aos-duration="1000">
+                    <div class="col-md-6" data-aos="fade-down-right"  data-aos-duration="1000">
                         <img class="img-fluid" [src]="data.seccion4.imagen" alt="Gestión Rutas">
                     </div>
                 </div>
@@ -96,7 +96,7 @@
         <div class="seccion4-mobileforms pt-50 pb-50">
             <div class="container" *ngIf="data.seccion5">
                 <div class="row">
-                    <div class="col-md-7" data-aos="fade-down-left" data-aos-anchor-placement="top-center" data-aos-duration="1000">
+                    <div class="col-md-7" data-aos="fade-down-left"  data-aos-duration="1000">
                         <div class="row justify-content-end mb-2">
                             <ng-container *ngFor="let beneficio of data.seccion5.beneficios">
                                 <div class="beneficio-mobileforms d-flex p-2 m-1 card-zoom">
@@ -106,7 +106,7 @@
                             </ng-container>
                         </div>
                     </div>
-                    <div class="col-md-5 my-auto" data-aos="fade-down-right" data-aos-anchor-placement="top-center" data-aos-duration="1000">
+                    <div class="col-md-5 my-auto" data-aos="fade-down-right"  data-aos-duration="1000">
                         <p class="size32 font-weight-300 text-gray letter-spacing-097 line-height-36" [innerHTML]="data.seccion5.texto | safeHtml: 'html'"></p>
                         <a mat-raised-button class="text-decoration-none bg-green btn-green size18 text-white border-radius-3 font-weight-500" [href]="data.seccion5.url_boton_1">{{ data.seccion5.texto_boton_1 }}</a>
                     </div>
@@ -116,17 +116,17 @@
         <div class="seccion5-mobileforms pt-50" *ngIf="data.seccion6">
             <div class="container mb-5">
                 <div class="row">
-                    <div class="col-md-6 my-auto" data-aos="fade-down-left" data-aos-anchor-placement="top-center" data-aos-duration="1200">
+                    <div class="col-md-6 my-auto" data-aos="fade-down-left"  data-aos-duration="1200">
                         <p class="font-weight-300 size25 letter-spacing-069 line-height-30 text-gray"><span class="font-weight-700 text-green">{{data.seccion6.integracion_y_clientes.integracion.titulo}}</span></p>
                         <p class="font-weight-300 size25 letter-spacing-069 line-height-30 text-gray">{{ data.seccion6.integracion_y_clientes.integracion.descripcion }}</p>
                     </div>
-                    <div class="col-md-6" data-aos="fade-down-right" data-aos-anchor-placement="top-center" data-aos-duration="1200">
+                    <div class="col-md-6" data-aos="fade-down-right"  data-aos-duration="1200">
                         <img class="img-fluid mx-auto d-block" [src]="data.seccion6.integracion_y_clientes.integracion.imagen" alt="Integración">
                     </div>
                 </div>
             </div>
             <div class="container-fluid pt-50">
-                <div class="row" data-aos="fade-top" data-aos-anchor-placement="top-center" data-aos-duration="1000">
+                <div class="row" data-aos="fade-top"  data-aos-duration="1000">
                     <div class="col-md-12">
                         <h2 class="clientes-title text-center ubuntu text-green font-weight-700 size35 letter-spacing-097 line-height-46"><img [src]="data.seccion6.integracion_y_clientes.clientes.icono"> {{data.seccion6.integracion_y_clientes.clientes.titulo}}</h2>
                         <owl-carousel-o [options]="customOptions">
@@ -141,10 +141,10 @@
             </div>
             <div class="container mt-5 pt-3 pb-5" *ngIf="data.seccion7">
                 <div class="row">
-                    <div class="col-md-6" data-aos="fade-down-left" data-aos-anchor-placement="top-center" data-aos-duration="1000">
+                    <div class="col-md-6" data-aos="fade-down-left"  data-aos-duration="1000">
                         <img class="img-fluid" [src]="data.seccion7.imagen" alt="Solución Eficaz" />
                     </div>
-                    <div class="col-md-6 my-auto" data-aos="fade-down-right" data-aos-anchor-placement="top-center" data-aos-duration="1000">
+                    <div class="col-md-6 my-auto" data-aos="fade-down-right"  data-aos-duration="1000">
                         <h3 class="ubuntu text-green font-weight-700 size22 letter-spacing-071 line-height-32 mb-1" [innerHTML]="data.seccion7.descripcion | safeHtml: 'html'"></h3>
                         <!-- <p class="text-gray size22 letter-spacing-071 line-height-32">Suscripción mensual de <span class="font-weight-700">$16 USD</span></p> -->
                         <a class="border-radius-3 bg-green size18 text-white text-decoration-none btn-green" mat-raised-button [href]="data.seccion7.url_boton" target="_blank">{{ data.seccion7.texto_boton }}</a>

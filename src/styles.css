@@ -380,6 +380,9 @@ a:hover{
 /*=================*/
 
 /* Line Height */
+.line-height-1-2{
+    line-height: 1.2!important;
+}
 .line-height-1-5{
     line-height: 1.5!important;
 }
@@ -990,13 +993,7 @@ a:-webkit-any-link:focus-visible {
 .seccion3-ontime{
     position:relative
 }
-.seccion3-smartsale .img-back,
-.seccion3-ontime .img-back{
-    width: 35%;
-    position: absolute;
-    right: 0;
-    top: 10%;
-}
+
 .beneficio{
     background-color: #FFFFFF;
     border-radius: 3px;
@@ -1649,7 +1646,15 @@ footer ul{
 }
 
 /* FIN OWL CUSTOM*/
+
 @media (min-width: 768px) {
+    .seccion3-smartsale .img-back,
+    .seccion3-ontime .img-back{
+        width: 60%;
+        position: absolute;
+        right: 0;
+        top: 30%;
+    }
     .seccion5-mobileforms .gallery .carousel-cell:nth-child(2n){
         margin-top: -50px;
     }
@@ -1716,10 +1721,25 @@ footer ul{
         width: 30rem;
     }
 }
-
+@media (min-width: 1280px){
+    .seccion3-smartsale .img-back,
+    .seccion3-ontime .img-back{
+        width: 50%;
+        position: absolute;
+        right: 0;
+        top: 10%;
+    }
+}
 @media (min-width: 1920px) {
     .clinica{
         right: 35%;
+    }
+    .seccion3-smartsale .img-back,
+    .seccion3-ontime .img-back{
+        width: 45%;
+        position: absolute;
+        right: 0;
+        top: 5%;
     }
 }
 
